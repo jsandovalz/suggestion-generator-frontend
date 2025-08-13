@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { API_BASE_URL } from '../config';
+
 
 export const useSuggestions = () => {
   const [loading, setLoading] = useState(false);
@@ -13,10 +15,10 @@ export const useSuggestions = () => {
     setError(null);
 
     try {
-      const { data } = await axios.post('http://localhost:8000/api/suggestions', { prompt });
+      const { data } = await axios.post(`${API_BASE_URL}/suggestions`, { prompt });
       setSuggestions(data.suggestions);
     } catch (err) {
-      setError('Error al generar sugerencias' + err);
+      setError('Error generating suggestions' + err);
       console.error(err);
     } finally {
       setLoading(false);

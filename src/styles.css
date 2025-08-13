@@ -10,7 +10,7 @@ body {
   color: #1f2937;
 }
 
-/* Contenedor principal */
+/* main contain */
 .suggestions-container {
   max-width: 700px;
   margin: 3rem auto;
@@ -20,7 +20,7 @@ body {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Título */
+/* tittle */
 .suggestions-title {
   font-size: 1.8rem;
   font-weight: bold;
@@ -29,9 +29,9 @@ body {
   text-align: center;
 }
 
-/* Lista de sugerencias */
+/* suggestions list */
 .suggestions-list {
-  max-height: 300px;
+  max-height: 600px;
   overflow-y: auto;
   margin-bottom: 1.5rem;
   padding-right: 0.5rem;
@@ -46,7 +46,7 @@ body {
   font-size: 1rem;
 }
 
-/* Formulario */
+/* Form */
 .suggestion-form {
   display: flex;
   gap: 0.5rem;
